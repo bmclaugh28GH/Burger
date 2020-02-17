@@ -1,0 +1,71 @@
+
+<!--jumbotron-->
+<div class="container">
+
+   <div class="jumbotron">
+      <h2 class="text-center">Burger Logger!!</h2>
+      <br>
+      <form class="create-form">
+         <div class="form-group">
+            <label for="burger">Name Your Burger:</label>
+            <input type="text" id="burger" name="myBurger">
+            <button class="btn-sm btn-outline-danger" type="submit">Add It</button>
+         </div>
+      </form>
+
+   </div> <!--jumbotron-->
+
+   <div class="row">
+ 
+      <div class="col-6">
+
+         <h4>Ready For Ingurgitation!</h4>
+         <!-- Pass in data from server.js -->
+         <ul>
+            {{#each readyBurgerList}}
+            <li>
+               <p><span class="label">Name:</span> {{this.burger_name}}</p>
+               <button class="btn-sm btn-outline-danger" data-id="{{this.id}}" class="devourBurger">DEVOUR</button>
+            </li>
+            {{/each}}
+         </ul>
+
+      </div> <!-- col -->
+ 
+      <div class="col-6">
+
+         <h4>Long Gone!</h4>
+
+         <!-- Pass in data from server.js--> 
+         <ul>
+            {{#each burgerHistoryList}}
+            <li>
+               <p><span class="label">Name:</span> {{this.burger_name}}</p>
+            </li>
+            {{/each}}
+         </ul>
+
+      </div> <!-- col -->
+  
+   </div> <!-- row -->
+
+<!--
+   <h2>Add a Quote</h2>
+
+   <form class="create-form">
+
+      <div class="form-group">
+         <label for="auth">Author:</label>
+         <input type="text" id="auth" name="author">
+      </div>
+
+      <div class="form-group">
+         <label for="quo">Quote:</label>
+         <textarea id="quo" name="quote" rows="8" cols="40"></textarea>
+      </div>
+      <button type="submit">Add Quote</button>
+   </form>
+-->
+</div>
+
+
