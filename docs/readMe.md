@@ -24,6 +24,4 @@ The instructions said this would be a difficult assignment, and they were right.
 
 OTOH, the visual part of the assignment was PERFECT. Very simple, nothing to get in the way of struggling with MVC and ORM. Lol. I was really able to focus on the point of the exercise. 
 
-On a personal note, I have to mention how much respect I have for my classmates who aren't developers or don't work in IT at all!! This is a rough ride for me; I'd be dying if I didn't have a development background. Incredible.  
-
 
