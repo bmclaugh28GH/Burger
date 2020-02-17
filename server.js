@@ -20,7 +20,7 @@ app.set("view engine", "handlebars");
 
 var connection = require("./config/connection.js");
 
-var routes = require("./controllers/burger.js");
+var routes = require("./controllers/burger_controller.js");
 app.use(routes);
 
 // Start our server so that it can begin listening to client requests.

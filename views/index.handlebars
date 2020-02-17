@@ -9,7 +9,7 @@
          <div class="form-group">
             <label for="burger">Name Your Burger:</label>
             <input type="text" id="burger" name="myBurger">
-            <button class="btn-sm btn-outline-danger" type="submit">Add It</button>
+            <button class="btn-sm btn-outline-danger add-burger" type="submit">Add It</button>
          </div>
       </form>
 
@@ -25,7 +25,7 @@
             {{#each readyBurgerList}}
             <li>
                <p><span class="label">Name:</span> {{this.burger_name}}</p>
-               <button class="btn-sm btn-outline-danger" data-id="{{this.id}}" class="devourBurger">DEVOUR</button>
+               <button class="btn-sm btn-outline-danger devour-burger" data-id="{{this.id}}">DEVOUR</button>
             </li>
             {{/each}}
          </ul>
